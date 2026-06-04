@@ -108,3 +108,52 @@
 // myCoding.forEach((item)=>{
 //     console.log(item.languageName);
 // })
+
+// const myNum = [1,2,3,4,5,6,7,8,9,10]
+// const newNums=[];
+// myNum.forEach((num)=>{
+//     if(num>4){
+//         newNums.push(num);
+//     }
+// })
+// console.log(newNums);
+
+// //4.filter
+
+// const myNum = [1,2,3,4,5,6,7,8,9,10]
+
+// const newNUms=myNum.filter((item)=>{
+//     return item > 4;
+// });
+// console.log(newNUms);//return new array
+// console.log(myNum);
+
+//  //5.MAP
+//  const myNums = [1,2,3,4,5,6];
+//  const newNums=myNums.map((num)=>{
+//     return num+10;
+//  });
+//  console.log(newNums);//return new array
+//  console.log(myNums);
+
+// //chaining:- map().filter(),map().map(),filter().filter() etc
+//  const myNums = [1,2,3,4,5,6];
+//  const newNums = myNums.map((item)=> item*5).filter((num)=>num>20).map((item)=>{return item - 3});
+//  console.log(newNums)
+
+// // //6.reduce
+ //const arr1=[1,2,3,4,5]
+// const initialVlaue = 0;
+
+// const sum = arr1.reduce((accumulator,currentValue)=>accumulator+currentValue,initialVlaue);
+// console.log(sum);
+
+// //here in first itteration accumulator takes initialVlaue value ,after that with second itteration it takes accumulator+currentValue.
+
+// //if not initialValue
+
+// const sum = arr1.reduce((acc,currVal)=>{
+//     console.log(`acc:${acc},currVal:${currVal}`);
+//     return acc+currVal
+// },3);
+// console.log(sum)
