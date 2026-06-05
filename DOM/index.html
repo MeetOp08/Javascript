@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="heading">DOM learing</h1>
+    <!-- <h1 id="heading">DOM learing</h1>
     <P id="text" class="heading">Welcome to dom learning</P>
     <h1>hi</h1>
     <h1>hi</h1>
@@ -15,7 +15,28 @@
         <li class="list-item">one</li>
         <li class="list-item">two</li>
         <li class="list-item">three</li>
-    </ul>
-    <script src="./script.js"></script>
+    </ul> -->
+
+    <h1>Child-Parent relations</h1>
+
+    <div class="parent">
+        <div class="child">One</div>
+        <div class="child">Two</div>
+        <div class="child">Three</div>
+    </div>
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        let div = document.createElement('div');
+        console.log(div);
+        div.className="newDiv";
+        div.id = "newDivId"
+        div.innerHTML=`<h1> hii! i am a new Div created inside script tag in HTML</h1>`
+        
+
+        // let addnew=document.createTextNode("hii! i am a new Div created inside script tag in HTML")
+        // div.appendChild(addnew);//add text
+
+        document.body.appendChild(div);
+    </script>
 </body>
 </html>

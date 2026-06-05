@@ -34,3 +34,20 @@
 // Array.from(listitem).forEach((item)=>{
 //     item.style.color="red"
 // })
+
+
+// let parent = document.querySelector(".parent");
+// // parent.children//HTMLCollection(3) [div.child, div.child, div.child]
+// // parent.children[1]
+
+// // for (let i = 0;parent.children.length;i++){
+// //     console.log(parent.children[i].innerHTML);
+// // }
+
+// // parent.children[1].style.color = "orange";
+// // parent.firstElementChild //<div class=​"child">​One​</div>​
+// //parent.lastElementChild //<div class=​"child">​Three​</div>​
+// parent.childNodes //NodeList(7) [text, div.child, text, div.child, text, div.child, text]
+// one = document.querySelector(".child");//<div class=​"child">​One​</div>​
+// one.parentElement //<div class=​"parent">​<div class=​"child">​One​</div>​<div class=​"child">​Two​</div>​<div class=​"child">​Three​</div>​</div>​
+// one.nextElementSibling //<div class=​"child">​Two​</div>​
