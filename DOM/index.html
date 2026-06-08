@@ -19,24 +19,77 @@
 
     <h1>Child-Parent relations</h1>
 
-    <div class="parent">
+    <!-- <div class="parent">
         <div class="child">One</div>
         <div class="child">Two</div>
         <div class="child">Three</div>
-    </div>
+    </div> -->
     <!-- <script src="./script.js"></script> -->
+
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>python</li>
+    </ul>
     <script>
-        let div = document.createElement('div');
-        console.log(div);
-        div.className="newDiv";
-        div.id = "newDivId"
-        div.innerHTML=`<h1> hii! i am a new Div created inside script tag in HTML</h1>`
+        // let div = document.createElement('div');
+        // console.log(div);
+        // div.className="newDiv";
+        // div.id = "newDivId"
+        // div.innerHTML=`<h1> hii! i am a new Div created inside script tag in HTML</h1>`
         
 
         // let addnew=document.createTextNode("hii! i am a new Div created inside script tag in HTML")
         // div.appendChild(addnew);//add text
 
-        document.body.appendChild(div);
+        // document.body.appendChild(div);
+
+
+        // //basic edit
+
+        // function addLanguage(langName){
+        //     const li = document.createElement('li');
+        //     li.innerHTML = `${langName}`;
+
+        //    const lang = document.querySelector('.language');
+        //    lang.appendChild(li)
+        // }
+        // addLanguage("python");
+        // addLanguage("C++");
+
+        // //this take travel to the last node so for large number it became complex
+
+        // //optimise code
+
+        // function addLanguage(langName){
+        //     const li = document.createElement("li");
+        //     li.appendChild(document.createTextNode(langName))
+        //     document.querySelector('.language').appendChild(li);
+        // }
+        // addLanguage("python");
+        // addLanguage("C");
+
+        // //Edit
+        // //1
+        // const secondLang = document.querySelector('li:nth-child(2)')
+        // console.log(secoundLang);
+        // secondLang.innerHTML = "MOJO";
+
+        // //2
+        // const secondLang = document.querySelector('li:nth-child(2)');
+        // const newli = document.createElement('li');
+        // newli.textContent = "nextjs"
+        // secondLang.replaceWith(newli)
+
+        // //3
+        // const firstLang = document.querySelector('li:nth-child(1)');
+        // firstLang.outerHTML='<li>TypeScript</li>';
+
+
+        // //remove
+
+        // const lastLang = document.querySelector('li:last-child')
+        // lastLang.remove();  
     </script>
 </body>
 </html>
