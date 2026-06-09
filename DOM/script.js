@@ -6,7 +6,7 @@
 // title.style.backgroundColor="green";
 // title.style.padding=10px;
 
-// title.innerHTML
+//title.innerHTML
 //title.textContent
 //title.innertext
 
