@@ -7,7 +7,7 @@ let interval;
 startbtn.addEventListener('click',()=>{
      interval = setInterval(()=>{
         randomColor()
-    },200)
+    },20)
 });
  
 function randomColor(){
@@ -27,6 +27,7 @@ function randomColor(){
 }
 
 const stopbtn = document.querySelector("#stop");
+
 stopbtn.addEventListener('click',()=>{
     clearInterval(interval);
     interval = null;
