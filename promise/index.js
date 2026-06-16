@@ -1,16 +1,16 @@
-// const promiseOne = new Promise((resolve,reject)=>{
-//     //do an task
-//     //DB calls, cryptography , network
+const promiseOne = new Promise((resolve,reject)=>{
+    //do an task
+    //DB calls, cryptography , network
 
-//     setTimeout(()=>{
-//         console.log("Task is complete");
-//         resolve();
-//     },1000)
-// })
+    setTimeout(()=>{
+        console.log("Task is complete");
+        resolve();
+    },1000)
+})
 
-// promiseOne.then(()=>{
-//     console.log("Promise Consummed");
-// })
+promiseOne.then(()=>{
+    console.log("Promise Consummed");
+})
 
 // new Promise((res,rej)=>{
 //     setTimeout(()=>{
@@ -124,26 +124,35 @@
 // // 2.
 
  
-// async function taskPromise(){
-//     try{
-//         console.log("Starting...")
-//         const response = await new Promise((resolve,reject)=>{
-//                 setTimeout(()=>{
-//                     if(true){
-//                         resolve("This is Promise 2");
-//                     }else{
-//                         reject("Error")
-//                     }
+async function taskPromise(){
+    try{
+        console.log("Starting...")
+        const response = await new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    if(true){
+                        resolve("This is Promise 2");
+                    }else{
+                        reject("Error")
+                    }
                 
-//                 },6000)
-// })
-//         console.log(response)
-//         console.log("Thank you!")
-//     }
-//     catch(error){
-//         console.log(error);
-//     }
+                },1000)
+})
+        console.log(response)
+        console.log("Thank you!")
+    }
+    catch(error){
+        console.log(error);
+    }
     
-// }
-// taskPromise()
+}
+taskPromise()
 
+
+fetch("https://api.github.com/users")//fetch will run first and then settimeout/setinterval will run
+.then((res)=>{
+    return res.json();
+}).then((data)=>{
+    console.log(data)
+}).catch((error)=>{
+    console.log(error);
+})
